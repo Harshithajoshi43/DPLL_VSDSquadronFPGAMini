@@ -52,7 +52,6 @@ The DPLL design is a simple but powerful example of how **feedback systems** can
 * **Synthesizers and modulation systems**
 * **Timing synchronization** in software-defined radios
 
-This project showcases not only **hardware design skills** (Verilog, synthesis, flashing) but also **software integration** (UART communication, simulation). It’s ideal for learning how digital feedback control loops work in real time.
 
 ---
 
