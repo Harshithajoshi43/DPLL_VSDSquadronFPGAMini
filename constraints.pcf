@@ -1,0 +1,14 @@
+# Clock (12MHz onboard)
+set_io --warn-no-port clk_12MHz 20    # Changed to Pin 20
+
+# Reset (active-low)
+set_io reset_n 45                       # Keep same (Pin 45)
+
+# UART (FTDI connection)
+set_io uart_tx 14                       # Changed to Pin 14 (TX)
+set_io uart_rx 15                       # Changed to Pin 15 (RX)
+
+# RGB LEDs
+set_io leds[0] 39                       # RGB0 (Pin 39)
+set_io leds[1] 40                       # RGB1 (Pin 40)
+set_io leds[2] 41                       # RGB2 (Pin 41)
