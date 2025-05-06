@@ -64,6 +64,27 @@ The DPLL design is a simple but powerful example of how **feedback systems** can
 * **Synthesizers and modulation systems**
 * **Timing synchronization** in software-defined radios
 
+## 📦 Prerequisites
+
+Ensure the following open-source tools are installed:
+
+| Tool               | Purpose                                | Install Command (Ubuntu/Debian)           |
+|--------------------|----------------------------------------|--------------------------------------------|
+| **Yosys**          | Synthesis (Verilog → JSON)             | `sudo apt install yosys`                  |
+| **nextpnr-ice40**  | Placement & routing for iCE40 FPGA     | `sudo apt install nextpnr-ice40`          |
+| **IceStorm**       | Bitstream generation for iCE40         | `sudo apt install icestorm`               |
+| **Icarus Verilog** | Verilog simulation compiler            | `sudo apt install iverilog`               |
+| **GTKWave**        | View simulation waveforms              | `sudo apt install gtkwave`                |
+
+---
+
+## 🚀 Getting Started
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/<your-username>/DPLL_VSDSquadronFPGAMini.git
+cd DPLL_VSDSquadronFPGAMini
 
 ---
 
