@@ -86,6 +86,6 @@ Ensure the following open-source tools are installed:
 git clone https://github.com/<your-username>/DPLL_VSDSquadronFPGAMini.git
 cd DPLL_VSDSquadronFPGAMini
 
----
+
 
 
