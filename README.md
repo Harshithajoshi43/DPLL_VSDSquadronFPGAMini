@@ -23,8 +23,6 @@ Together, these form a feedback system that locks onto the reference frequency a
 
   * Green, red, and blue lights blink in a pattern based on the generated clock frequency.
   * This creates a **visible indicator** of frequency changes based on different control values (phase increments).
-* A **UART controller** (when used) can accept frequency control values from a host PC, giving real-time tuning capability.
-* A **Python script (`dpll_control.py`)** is included to send phase increment values over UART and interact with the DPLL on the board.
 
 ### 🧪 Simulation and Testing
 
