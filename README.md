@@ -1,5 +1,4 @@
 # DPLL_VSDSquadronFPGAMini
-Sure! Here's a **detailed and structured Introduction** for your GitHub `README.md` that adds technical clarity while still being beginner-friendly:
 
 ---
 
