@@ -4,7 +4,19 @@
 
 ## 🧠 Introduction
 
-This project implements a simplified **Digital Phase-Locked Loop (DPLL)** on an FPGA board using Verilog HDL. A DPLL is an essential building block in many **digital communication** and **signal processing systems**, primarily used to synchronize a locally generated signal (usually a clock or data stream) with an incoming reference signal.
+This project implements a simplified **Digital Phase-Locked Loop (DPLL)** on an FPGA board using Verilog HDL. A DPLL is a core component in many **digital communication** and **signal processing systems**, where it is used to synchronize a locally generated signal (usually a clock or data stream) with an incoming reference signal.
+
+The design is targeted on the **Tang Nano 9K FPGA Board**, a compact, low-cost, and beginner-friendly development board from Sipeed. It features a Gowin GW1NR-9 FPGA, 8640 LUT4s, and includes:
+
+3 independently controllable RGB LEDs.
+
+On-board USB-C interface for power, flashing, and optional UART communication.
+
+A 512Mb (64MB) PSRAM.
+
+Compatible with Yosys, NextPNR, iverilog, gtkwave forming a completely open-source FPGA toolchain.
+
+The board’s small form factor and accessible peripherals make it ideal for mini-projects like this DPLL visualization.
 
 ### 🔍 What is a DPLL?
 
