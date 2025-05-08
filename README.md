@@ -89,10 +89,10 @@ Ensure the following open-source tools are installed:
 
 
 # Clean, build, and flash to FPGA (run sequentially)
-```
 make clean    # Remove previous builds
 make build    # Synthesize design
 make flash    # Program the board (requires sudo)
+```
 
 ```
 # Compile, run, and view waveforms in one command
