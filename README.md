@@ -64,6 +64,15 @@ The DPLL design is a simple but powerful example of how **feedback systems** can
 * **Synthesizers and modulation systems**
 * **Timing synchronization** in software-defined radios
 
+
+## 🚀 Getting Started
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/<your-username>/DPLL_VSDSquadronFPGAMini.git
+cd DPLL_VSDSquadronFPGAMini
+
 ## 📦 Prerequisites
 
 Ensure the following open-source tools are installed:
@@ -78,13 +87,14 @@ Ensure the following open-source tools are installed:
 
 ---
 
-## 🚀 Getting Started
+**Compile and Flash the FPGA**
+make clean
+```
+make build
+```
+make flash
+```
 
-### 1️⃣ Clone the Repository
-
-```bash
-git clone https://github.com/<your-username>/DPLL_VSDSquadronFPGAMini.git
-cd DPLL_VSDSquadronFPGAMini
 
 
 
