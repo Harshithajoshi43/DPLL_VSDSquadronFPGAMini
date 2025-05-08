@@ -83,14 +83,15 @@ Ensure the following open-source tools are installed:
 ```bash
 git clone https://github.com/<your-username>/DPLL_VSDSquadronFPGAMini.git
 cd DPLL_VSDSquadronFPGAMini
-```
+
+```bash
 ### **Clean, build, and flash to FPGA (run sequentially)**
 make clean    # Remove previous builds
 make build    # Synthesize design
 make flash    # Program the board (requires sudo)
 ```
 
-```
+```bash
 # Compile, run, and view waveforms in one command
 iverilog -o sim/dpll.vvp -s dpll_tb src/dpll_top.v sim/dpll_tb.v src/sim_lib.v -D SIM && \
 vvp sim/dpll.vvp && \
