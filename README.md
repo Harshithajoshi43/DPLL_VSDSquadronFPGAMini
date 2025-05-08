@@ -68,11 +68,6 @@ The DPLL design is a simple but powerful example of how **feedback systems** can
 ## 🚀 Getting Started
 
 ### 1️⃣ Clone the Repository
-
-```bash
-git clone https://github.com/<your-username>/DPLL_VSDSquadronFPGAMini.git
-cd DPLL_VSDSquadronFPGAMini```
-
 ## 📦 Prerequisites
 
 Ensure the following open-source tools are installed:
@@ -85,10 +80,11 @@ Ensure the following open-source tools are installed:
 | **Icarus Verilog** | Verilog simulation compiler            | sudo apt install iverilog`               |
 | **GTKWave**        | View simulation waveforms              | sudo apt install gtkwave`                |
 
----
+```bash
+git clone https://github.com/<your-username>/DPLL_VSDSquadronFPGAMini.git
+cd DPLL_VSDSquadronFPGAMini
 
-
-# Clean, build, and flash to FPGA (run sequentially)
+# **Clean, build, and flash to FPGA (run sequentially)**
 make clean    # Remove previous builds
 make build    # Synthesize design
 make flash    # Program the board (requires sudo)
