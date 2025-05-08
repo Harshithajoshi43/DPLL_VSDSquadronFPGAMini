@@ -79,28 +79,24 @@ Ensure the following open-source tools are installed:
 
 | Tool               | Purpose                                | Install Command (Ubuntu/Debian)           |
 |--------------------|----------------------------------------|--------------------------------------------|
-| **Yosys**          | Synthesis (Verilog → JSON)             | `sudo apt install yosys`                  |
-| **nextpnr-ice40**  | Placement & routing for iCE40 FPGA     | `sudo apt install nextpnr-ice40`          |
-| **IceStorm**       | Bitstream generation for iCE40         | `sudo apt install icestorm`               |
-| **Icarus Verilog** | Verilog simulation compiler            | `sudo apt install iverilog`               |
-| **GTKWave**        | View simulation waveforms              | `sudo apt install gtkwave`                |
+| **Yosys**          | Synthesis (Verilog → JSON)             | ```sudo apt install yosys`                 |
+| **nextpnr-ice40**  | Placement & routing for iCE40 FPGA     | ```sudo apt install nextpnr-ice40`          |
+| **IceStorm**       | Bitstream generation for iCE40         | ```sudo apt install icestorm`               |
+| **Icarus Verilog** | Verilog simulation compiler            | ```sudo apt install iverilog`               |
+| **GTKWave**        | View simulation waveforms              | ```sudo apt install gtkwave`                |
 
 ---
 
-**Compile and Flash the FPGA **
-
-make clean
+```
+# Clean, build, and flash to FPGA (run sequentially)
+make clean    # Remove previous builds
+make build    # Synthesize design
+make flash    # Program the board (requires sudo)
 
 ```
-make build
-```
-make flash
-```
-**For quick testing:**
-
-iverilog -o sim/dpll.vvp -s dpll_tb src/dpll_top.v sim/dpll_tb.v src/sim_lib.v -D SIM && vvp sim/dpll.vvp && gtkwave sim/dpll.vcd
-```
-
-
+# Compile, run, and view waveforms in one command
+iverilog -o sim/dpll.vvp -s dpll_tb src/dpll_top.v sim/dpll_tb.v src/sim_lib.v -D SIM && \
+vvp sim/dpll.vvp && \
+gtkwave sim/dpll.vcd
 
 
