@@ -87,14 +87,19 @@ Ensure the following open-source tools are installed:
 
 ---
 
-**Compile and Flash the FPGA**
+**Compile and Flash the FPGA **
+
 make clean
+
 ```
 make build
 ```
 make flash
 ```
+**For quick testing:**
 
+iverilog -o sim/dpll.vvp -s dpll_tb src/dpll_top.v sim/dpll_tb.v src/sim_lib.v -D SIM && vvp sim/dpll.vvp && gtkwave sim/dpll.vcd
+```
 
 
 
