@@ -71,7 +71,7 @@ The DPLL design is a simple but powerful example of how **feedback systems** can
 
 ```bash
 git clone https://github.com/<your-username>/DPLL_VSDSquadronFPGAMini.git
-cd DPLL_VSDSquadronFPGAMini
+cd DPLL_VSDSquadronFPGAMini```
 
 ## 📦 Prerequisites
 
