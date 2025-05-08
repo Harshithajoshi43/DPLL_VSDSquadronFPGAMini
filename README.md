@@ -80,14 +80,22 @@ Ensure the following open-source tools are installed:
 | **Icarus Verilog** | Verilog simulation compiler            | sudo apt install iverilog`               |
 | **GTKWave**        | View simulation waveforms              | sudo apt install gtkwave`                |
 
-```bash
+```
 git clone https://github.com/<your-username>/DPLL_VSDSquadronFPGAMini.git
 cd DPLL_VSDSquadronFPGAMini
+```
 
 
 ### **Clean, build, and flash to FPGA (run sequentially)**
-``` make clean    # Remove previous builds
-``` make build    # Synthesize design
+```
+make clean    # Remove previous builds
+```
+
+```
+make build    # Synthesize design
+```
+
+```
 make flash    # Program the board (requires sudo)
 ```
 
