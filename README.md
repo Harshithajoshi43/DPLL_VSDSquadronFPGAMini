@@ -83,8 +83,8 @@ Ensure the following open-source tools are installed:
 ```bash
 git clone https://github.com/<your-username>/DPLL_VSDSquadronFPGAMini.git
 cd DPLL_VSDSquadronFPGAMini
-
-# **Clean, build, and flash to FPGA (run sequentially)**
+```
+### **Clean, build, and flash to FPGA (run sequentially)**
 make clean    # Remove previous builds
 make build    # Synthesize design
 make flash    # Program the board (requires sudo)
